@@ -8,22 +8,22 @@
 | btc_addresses | 60000 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-bitcoin-addresses.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#btc_addresses |
 | builds | 1183 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-builds.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#builds |
 | builds_configurations | 1183 | | |
-| chats | 4521 | | |
-| clients | 281 | | |
-| events | 0 | - | |
-| events_seen | 0 | - | |
-| faq | 1 | | |
-| files | 1015 | | |
-| invites | 3693 | | |
-| jobs | 0 | - | |
-| migrations | 34 | | |
-| news | 5 | | |
-| pkeys | 30000 | |
-| socket_messages | | |
-| system_invalid_requests | | |
+| chats | 4521 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#chats |
+| clients | 281 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#clients |
+| events | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#events |
+| events_seen | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#events_seen |
+| faq | 1 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#faq |
+| files | 1015 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-files.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#files |
+| invites | 3693 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#invites |
+| jobs | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#jobs |
+| migrations | 34 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#migrations |
+| news | 5 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#news |
+| pkeys | 30000 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#pkeys |
+| socket_messages | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#socket_messages |
+| system_invalid_requests | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#system_invalid_requests |
 | testfiles | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#testfiles |
-| users | 75 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-users.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#users |
-| visits | | | |
+| users | 73 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-users.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#users |
+| visits | | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#visits |
 
 ### Table Schema
 

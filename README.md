@@ -1,6 +1,6 @@
 # Lockbit Database Leak 2025
 
-On 29 April 2025 someone dumped the entire MySQL backend of LockBit’s affiliate panel and even pasted the download link on the gang’s own onion sites. The 20-table dump exposes Bitcoin payout addresses, build configurations for individual attacks, 4 400+ chat transcripts with victims, and—most amusingly—every affiliate password in clear text. This repo breaks the raw SQL into clean, comma-separated files and documents the schema so investigators, researchers and journalists can explore the data without spinning up a database server.
+On 29 April 2025 someone dumped the entire MySQL backend of LockBit’s affiliate panel and even pasted the download link on the gang’s own onion sites. The 20-table dump exposes Bitcoin payout addresses, build configurations for individual attacks, chat transcripts with victims, and—most amusingly—every affiliate password in clear text. This repo breaks the raw SQL into clean, comma-separated files and documents the schema so investigators, researchers and journalists can explore the data without spinning up a database server.
 
 ## Tables
 

@@ -2,23 +2,27 @@
 
 ## Tables
 
-| Table | Rows | Dump|
-| --- | --- | --- |
-| api_history | 0 | | 
-| btc_addresses | 60000 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-bitcoin-addresses.csv |
-| builds | 1183 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-builds.csv |
-| builds_configurations | 1183 | |
-| chats | 4521 | |
-| clients | 281 | |
-| events | 0 | |
-| events_seen | 0 | |
-| faq | 1 | |
-| files | 1015 | |
-| invites | 3693 | |
-| jobs | 0 | |
-| migrations | 34 | |
-| news | 5 | |
-| pkeys | 30000 |
+| Table | Rows | Dump| Schema |
+| --- | --- | --- | |
+| api_history | 0 | | |
+| btc_addresses | 60000 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-bitcoin-addresses.csv | |
+| builds | 1183 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-builds.csv | |
+| builds_configurations | 1183 | | |
+| chats | 4521 | | |
+| clients | 281 | | |
+| events | 0 | | |
+| events_seen | 0 | | |
+| faq | 1 | | |
+| files | 1015 | | |
+| invites | 3693 | | |
+| jobs | 0 | | |
+| migrations | 34 | | |
+| news | 5 | | |
+| pkeys | 30000 | |
+| socket_messages | | |
+| system_invalid_requests | | |
+| testfiles | 0 | | |
+| users | 75 | | |
 
 ### Table Schema
 
@@ -252,5 +256,86 @@ CREATE TABLE `pkeys` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
 
+#### socket_messages
+
+```sql
+CREATE TABLE `pkeys` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `type` int(11) NOT NULL,
+  `decryption_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `public_key` blob NOT NULL,
+  `extra` blob NOT NULL,
+  `status` int(11) DEFAULT 0,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+
+#### system_invalid_requests
+
+```sql
+CREATE TABLE `system_invalid_requests` (
+  `id` int(11) NOT NULL,
+  `adv_id` int(11) DEFAULT NULL,
+  `client_id` int(11) DEFAULT NULL,
+  `path` varchar(1000) DEFAULT NULL,
+  `request` longtext DEFAULT NULL,
+  `invalid_param` varchar(100) DEFAULT NULL,
+  `type` int(11) NOT NULL DEFAULT 1,
+  `created_at` datetime DEFAULT NULL,
+  `seen` datetime DEFAULT NULL,
+  `message` varchar(255) DEFAULT NULL,
+  `file` varchar(255) DEFAULT NULL,
+  `line` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
+#### testfiles
+
+```sql
+CREATE TABLE `testfiles` (
+  `id` int(11) NOT NULL,
+  `clientid` int(11) NOT NULL,
+  `upload_filename` varchar(300) CHARACTER SET utf8 NOT NULL,
+  `filesize` int(11) NOT NULL,
+  `upload_date` int(11) NOT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `status` int(11) DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+
+#### users
+
+```sql
+CREATE TABLE `users` (
+  `id` int(2) DEFAULT NULL,
+  `parentid` int(1) DEFAULT NULL,
+  `login` varchar(25) DEFAULT NULL,
+  `password` varchar(40) DEFAULT NULL,
+  `is_admin` int(1) DEFAULT NULL,
+  `level` int(1) DEFAULT NULL,
+  `session_id` varchar(40) DEFAULT NULL,
+  `linesxi_on` int(1) DEFAULT NULL,
+  `reg_date` int(10) DEFAULT NULL,
+  `last_online` int(10) DEFAULT NULL,
+  `paused` int(1) DEFAULT NULL,
+  `builders_settings` varchar(91) DEFAULT NULL,
+  `notifications` int(1) DEFAULT NULL,
+  `notify_trial` int(1) DEFAULT NULL,
+  `negotiations` int(1) DEFAULT NULL,
+  `show_extra_info` int(1) DEFAULT NULL,
+  `keep_messages_unread` int(1) DEFAULT NULL,
+  `toxid` varchar(76) DEFAULT NULL,
+  `toxdata` varchar(10) DEFAULT NULL,
+  `ips` varchar(10) DEFAULT NULL,
+  `permissions` varchar(139) DEFAULT NULL,
+  `paranoid_mode` int(1) DEFAULT NULL,
+  `created_at` varchar(16) DEFAULT NULL,
+  `updated_at` varchar(16) DEFAULT NULL,
+  `tag` varchar(10) DEFAULT NULL,
+  `invite_id` int(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```

@@ -4,26 +4,26 @@
 
 | Table | Rows | Dump| Schema |
 | --- | --- | --- | --- |
-| api_history | 0 | | |
-| btc_addresses | 60000 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-bitcoin-addresses.csv | |
-| builds | 1183 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-builds.csv | |
+| api_history | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/tree/main#api_history |
+| btc_addresses | 60000 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-bitcoin-addresses.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#btc_addresses |
+| builds | 1183 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-builds.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#builds |
 | builds_configurations | 1183 | | |
 | chats | 4521 | | |
 | clients | 281 | | |
-| events | 0 | | |
-| events_seen | 0 | | |
+| events | 0 | - | |
+| events_seen | 0 | - | |
 | faq | 1 | | |
 | files | 1015 | | |
 | invites | 3693 | | |
-| jobs | 0 | | |
+| jobs | 0 | - | |
 | migrations | 34 | | |
 | news | 5 | | |
 | pkeys | 30000 | |
 | socket_messages | | |
 | system_invalid_requests | | |
-| testfiles | 0 | | |
-| users | 75 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#users |
-| visits | 0 | | |
+| testfiles | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#testfiles |
+| users | 75 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-users.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#users |
+| visits | | | |
 
 ### Table Schema
 

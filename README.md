@@ -7,7 +7,7 @@
 | api_history | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/tree/main#api_history |
 | btc_addresses | 60000 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-bitcoin-addresses.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#btc_addresses |
 | builds | 1183 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-builds.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#builds |
-| builds_configurations | 1183 | | |
+| builds_configurations | 1183 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/tree/main#builds_configurations |
 | chats | 4521 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#chats |
 | clients | 281 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#clients |
 | events | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#events |
@@ -19,8 +19,8 @@
 | migrations | 34 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#migrations |
 | news | 5 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#news |
 | pkeys | 30000 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#pkeys |
-| socket_messages | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#socket_messages |
-| system_invalid_requests | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#system_invalid_requests |
+| socket_messages | | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#socket_messages |
+| system_invalid_requests | | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#system_invalid_requests |
 | testfiles | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#testfiles |
 | users | 73 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-users.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#users |
 | visits | | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#visits |

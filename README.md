@@ -22,7 +22,7 @@ On 29 April 2025 someone dumped the entire MySQL backend of LockBit’s affiliat
 | news | 4 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-news.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#news |
 | pkeys | 30000 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-pkeys.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#pkeys |
 | socket_messages | 5339 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-socket-messages.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#socket_messages |
-| system_invalid_requests | | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#system_invalid_requests |
+| system_invalid_requests | 3245 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-system-invalid-requests.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#system_invalid_requests |
 | testfiles | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#testfiles |
 | users | 73 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-users.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#users |
 | visits | 2398 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-visits.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#visits |
@@ -264,16 +264,13 @@ CREATE TABLE `pkeys` (
 #### socket_messages
 
 ```sql
-CREATE TABLE `pkeys` (
+CREATE TABLE `socket_messages` (
   `id` int(10) UNSIGNED NOT NULL,
-  `type` int(11) NOT NULL,
-  `decryption_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `public_key` blob NOT NULL,
-  `extra` blob NOT NULL,
-  `status` int(11) DEFAULT 0,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `adv_id` int(11) DEFAULT 0,
+  `client_id` int(11) DEFAULT 0,
+  `request_data` longblob DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;system
 ```
 
 #### system_invalid_requests

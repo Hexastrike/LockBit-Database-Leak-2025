@@ -11,6 +11,14 @@
 | chats | 4521 | |
 | clients | 281 | |
 | events | 0 | |
+| events_seen | 0 | |
+| faq | 1 | |
+| files | 1015 | |
+| invites | 3693 | |
+| jobs | 0 | |
+| migrations | 34 | |
+| news | 5 | |
+| pkeys | 30000 |
 
 ### Table Schema
 
@@ -140,4 +148,109 @@ CREATE TABLE `events` (
   `content` varchar(255) DEFAULT NULL,
   `created_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
+#### events_seen
+
+```sql
+CREATE TABLE `events_seen` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `event_id` int(11) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
+#### faq
+
+```sql
+CREATE TABLE `faq` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `title` varchar(191) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `date` int(10) UNSIGNED DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+```
+
+#### files
+
+```sql
+CREATE TABLE `files` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `adv_id` int(11) NOT NULL DEFAULT 0,
+  `client_id` int(11) NOT NULL DEFAULT 0,
+  `build_id` int(11) NOT NULL DEFAULT 0,
+  `message_id` int(11) NOT NULL DEFAULT 0,
+  `path` varchar(255) NOT NULL,
+  `filename` varchar(150) NOT NULL,
+  `downloads` int(11) NOT NULL DEFAULT 0,
+  `status` int(11) NOT NULL DEFAULT 1,
+  `created_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
+#### invites
+
+```sql
+CREATE TABLE `invites` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `invite` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `order` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `btc_wallet` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `monero_wallet` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `amount` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` int(11) NOT NULL DEFAULT 0,
+  `created_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+
+#### jobs
+
+```sql
+CREATE TABLE `jobs` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `job_data` longtext DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  `tries` int(11) DEFAULT NULL,
+  `channel` varchar(50) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
+#### migrations
+
+```sql
+CREATE TABLE `migrations` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+
+#### news
+
+```sql
+CREATE TABLE `news` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+
+#### pkeys
+
+```sql
+CREATE TABLE `pkeys` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `type` int(11) NOT NULL,
+  `decryption_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `public_key` blob NOT NULL,
+  `extra` blob NOT NULL,
+  `status` int(11) DEFAULT 0,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 ```

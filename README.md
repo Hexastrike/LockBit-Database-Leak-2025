@@ -3,7 +3,7 @@
 ## Tables
 
 | Table | Rows | Dump| Schema |
-| --- | --- | --- | |
+| --- | --- | --- | --- |
 | api_history | 0 | | |
 | btc_addresses | 60000 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-bitcoin-addresses.csv | |
 | builds | 1183 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-builds.csv | |
@@ -22,7 +22,8 @@
 | socket_messages | | |
 | system_invalid_requests | | |
 | testfiles | 0 | | |
-| users | 75 | | |
+| users | 75 | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#users |
+| visits | 0 | | |
 
 ### Table Schema
 
@@ -338,4 +339,15 @@ CREATE TABLE `users` (
   `tag` varchar(10) DEFAULT NULL,
   `invite_id` int(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
+#### visits
+
+```sql
+CREATE TABLE `visits` (
+  `id` int(11) NOT NULL,
+  `clientid` int(11) NOT NULL,
+  `visit_date` int(11) NOT NULL,
+  `created_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 ```

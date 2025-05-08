@@ -10,7 +10,7 @@ On 29 April 2025 someone dumped the entire MySQL backend of LockBit’s affiliat
 | btc_addresses | 60000 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-bitcoin-addresses.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#btc_addresses |
 | builds | 1183 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-builds.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#builds |
 | builds_configurations | 1183 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-builds-configurations.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/tree/main#builds_configurations |
-| chats | 4521 | <Redacted> | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#chats |
+| chats | 4521 | \<Redacted\> | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#chats |
 | clients | 246 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-clients.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#clients |
 | events | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#events |
 | events_seen | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#events_seen |

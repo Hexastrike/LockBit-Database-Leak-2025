@@ -23,7 +23,7 @@
 | system_invalid_requests | | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#system_invalid_requests |
 | testfiles | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#testfiles |
 | users | 73 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-users.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#users |
-| visits | | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#visits |
+| visits | 2398 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-visits.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#visits |
 
 ### Table Schema
 

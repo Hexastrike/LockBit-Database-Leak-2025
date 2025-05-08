@@ -21,7 +21,7 @@ On 29 April 2025 someone dumped the entire MySQL backend of LockBit’s affiliat
 | migrations | 34 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-migrations.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#migrations |
 | news | 4 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-news.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#news |
 | pkeys | 30000 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-pkeys.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#pkeys |
-| socket_messages | | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#socket_messages |
+| socket_messages | 5339 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-socket-messages.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#socket_messages |
 | system_invalid_requests | | | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#system_invalid_requests |
 | testfiles | 0 | - | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#testfiles |
 | users | 73 | https://github.com/Hexastrike/Lockbit-Database-Leak-2025/blob/main/lockbit-users.csv | https://github.com/Hexastrike/Lockbit-Database-Leak-2025#users |
